@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <!-- Webiste Title -->
+     <title>Amazing Amy's Barbershop</title>
+</head>
+<body>
+    <!-- Main Website Header -->
+    <h1>Amazing Amy's Barbershop</h1>
+    <!-- First Blog Post Title -->
+    <h2>A Fresh Cut  For You And Your Family</h2>
+    <!-- First Blog Post Text -->
+
+    <h2>pasta hair</h2>
+    <p>
+     <p><img src="http://media3.s-nbcnews.com/j/newscms/2016_14/1041116/ss-short-haircuts-kaley-cuoco_6c132dd0bc8126a05f06cab37648cbf0.today-ss-slide-desktop.jpg"></p>
+
+
+
+     <h2>noodles hair</h2>
+    <p>
+     <p><img src="http://thebestfashionblog.com/wp-content/uploads/2014/01/Long-Cascade-Haircuts-2014-1.jpg"></p>
+
+
+
+      <h2>dog hair</h2>
+    <p>
+     <p><img src="http://thebestfashionblog.com/wp-content/uploads/2013/07/Shoulder-Length-Haircuts-2013-2014-For-Women-10.jpg"></p>
+
+
+      <form method="POST"> 
+         {% csrf_token %} 
+         <input placeholder="Write Your Username" type="text" name="username"> <br> 
+         <textarea placeholder="choose the barber you want," name="barber name"></textarea> <br> 
+         <input type="submit"> 
+    </form>
+     
+    <!-- Display User Comments -->
+    <h1>User Comments</h1>
+    <p>Username: {{username}}</p> 
+    <p>Comment: {{comment}}</p> 
+
+
+
+
+
+
+
+
+    </p>
+    <!-- Website Footer -->
+    <footer> &copy; Kalu Kalu 2018 | A Kalu Kalu Production.</footer>
+</body>
+</html>
